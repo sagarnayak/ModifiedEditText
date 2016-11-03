@@ -1,9 +1,7 @@
 package com.csmpl.androidlib.edittextmod;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.ProviderInfo;
 import android.content.res.TypedArray;
 import android.text.Editable;
 import android.text.InputFilter;
@@ -12,13 +10,10 @@ import android.text.TextWatcher;
 import android.text.method.DigitsKeyListener;
 import android.util.AttributeSet;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.EditText;
 
 import com.csmpl.androidlib.edittextmod.util.ConstsAndKw;
 import com.csmpl.androidlib.edittextmod.util.Displaylog;
-
-import javax.security.auth.DestroyFailedException;
 
 /**
  * Created by sagar on 11/1/2016.
