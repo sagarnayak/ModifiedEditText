@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EditTextMod">
+        <attr name="LimitInput" format="integer" />
+        <attr name="BlockFirstSpace" format="boolean" />
+        <attr name="BlockIntermediateSpace" format="boolean" />
+        <attr name="BlockSqlInjection" format="boolean" />
+        <attr name="TakeOnlyNumbers" format="boolean" />
+        <attr name="TakeOnlyLetters" format="boolean" />
+        <attr name="SuccessBroadcast" format="string" />
+        <attr name="FailBroadcast" format="string" />
+        <attr name="ValidationType">
+            <flag name="PHONENUMBER" value="1" />
+            <flag name="EMAILADDRESS" value="2" />
+            <flag name="NAME" value="3" />
+        </attr>
+    </declare-styleable>
+</resources>
