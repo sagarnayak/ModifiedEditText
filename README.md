@@ -11,6 +11,7 @@ This is a more modified version of edittext. in conventional EditText in android
 5. Take Letters Only
 6. Take Numbers Only
 7. Receive Validation Failed and Success Broadcast
+8. Set Custom Error Message
 
 ## Specific Validation
 1. Phone Number Validation
@@ -77,3 +78,25 @@ This parameter will require you to provide a string. this string will be broadca
 ### How To Use Receive Validation Failed and Success Broadcast
     edittextmod:FailBroadcast="FAILED_BORADCAST"
     edittextmod:SuccessBroadcast="SUCCESS_BROADCAST"
+    
+## 8. Set Custom Error Message
+This parameter will require you to provide a error message as string. this is optional. if you dont want to provide a custom error message then it will show a default error message while validating.
+### How To Use Set Custom Error Message
+    edittextmod:error_message="Please enter correct data"
+    
+## 9. Phone Number Validation
+If you are aiming for a specific phone number validation then use this validation. this will take only numbers and the default number of characters are 10. if you want you can change it by applying a "_Number of Characters limit Validation_". by default the number keyboard will be opened. this includes a first blankspace and inermediate blannk space validation also, including the sql injection.
+### How To Use Phone Number Validation
+    edittextmod:ValidationType="PHONENUMBER"
+    
+## 10. Email Validation
+If you are aiming for a specific email address validation then use this validation. this will validate a proper email and will return a error message if you a proper email address is not entered.this includes a first blankspace and inermediate blannk space validation also, including the sql injection.
+### How To Use Email Validation
+    edittextmod:ValidationType="EMAILADDRESS"
+    
+## 10. Name Validation
+If you are aiming for a specific name validation then use this validation. this will take a name and if any other character is entered then this will show an error message.this includes a first blankspace validation also, including the sql injection.
+### How To Use Name Validation
+    edittextmod:ValidationType="NAME"
+    
+> At any point if the focus is changed and the validation is not successfull the edittext will not loose the focus. it will regain focus and request the user to enter a proper data with proper error message.
