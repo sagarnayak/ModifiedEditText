@@ -20,7 +20,7 @@ This is a more modified version of edittext. in conventional EditText in android
 ### Add it in your root build.gradle at the end of repositories:
 
 appprojects {<br />
-----repositories {<br />
+    repositories {<br />
     	maven {<br />
         	url "https://jitpack.io"<br />
             }<br />
