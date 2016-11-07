@@ -19,6 +19,7 @@
         android:layout_height="wrap_content"
         edittextmod:FailBroadcast="FAILED"
         edittextmod:SuccessBroadcast="SUCCESS"
+        edittextmod:error_message="Please enter correct data"
         edittextmod:ValidationType="PHONENUMBER" />
 
     <EditText

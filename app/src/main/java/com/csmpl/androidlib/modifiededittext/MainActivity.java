@@ -7,13 +7,19 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.csmpl.androidlib.edittextmod.EditTextMod;
+import com.csmpl.androidlib.edittextmod.util.Displaylog;
+
 public class MainActivity extends AppCompatActivity {
 
     BroadcastReceiver broadcastReceiver;
+    EditTextMod editTextMod;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
         IntentFilter filter = new IntentFilter();
         filter.addAction("FAILED");
         registerReceiver(broadcastReceiver, filter);
+
+        editTextMod = (EditTextMod) findViewById(R.id.edittextmod_demo);
     }
 
     @Override
