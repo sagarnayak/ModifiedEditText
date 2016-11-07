@@ -183,6 +183,20 @@ public class EditTextMod extends EditText {
         if (intValidationType == ConstsAndKw.PHONENUMBER) {
             intCharacterLimit = 10;
             setInputType(InputType.TYPE_CLASS_PHONE);
+            boolBlockFirstSpace = true;
+            boolBlockIntermediateSpace = true;
+            //sql injection validation
+        }
+
+        //for email address validation
+        if (intValidationType == ConstsAndKw.EMAILADDRESS) {
+            boolBlockFirstSpace = true;
+            boolBlockIntermediateSpace = true;
+        }
+
+        //for name validation
+        if (intValidationType == ConstsAndKw.NAME) {
+            boolBlockFirstSpace = true;
         }
 
         //do number validation
