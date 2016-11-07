@@ -94,11 +94,9 @@ If you are aiming for a specific email address validation then use this validati
 ### How To Use Email Validation
     edittextmod:ValidationType="EMAILADDRESS"
     
-## 10. Name Validation
+## 11. Name Validation
 If you are aiming for a specific name validation then use this validation. this will take a name and if any other character is entered then this will show an error message.this includes a first blankspace validation also, including the sql injection.
 ### How To Use Name Validation
     edittextmod:ValidationType="NAME"
-    
-    
     
 > At any point if the focus is changed and the validation is not successfull the edittext will not loose the focus. it will regain focus and request the user to enter a proper data with proper error message.
