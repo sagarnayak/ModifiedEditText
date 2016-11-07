@@ -73,7 +73,7 @@ Setting this value as true will not allow characters other then numbers at any p
     edittextmod:TakeOnlyNumbers="true"
     
 ## 7. Receive Validation Failed and Success Broadcast
-This parameter will require you to provide a string. this string will be broadcasted whenever there is a success or a fail in validtion as per what you have used this for.
+This parameter will require you to provide a string. this string will be broadcasted whenever there is a success or a fail in validtion as per what you have used this for. Register for broadcast with this name you have provided in the activity to receive a failed or success broadcast.
 ### How To Use Receive Validation Failed and Success Broadcast
     edittextmod:FailBroadcast="FAILED_BORADCAST"
     edittextmod:SuccessBroadcast="SUCCESS_BROADCAST"
