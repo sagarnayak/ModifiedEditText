@@ -18,6 +18,7 @@ This is a more modified version of edittext. in conventional EditText in android
 
 ## How To Use
 ### Add it in your root build.gradle at the end of repositories:
+
 allprojects {
 		repositories {
 			...
@@ -25,6 +26,7 @@ allprojects {
 		}
 	}
 ### Add the dependency
+
 dependencies {
 	        compile 'com.github.sagarnayak:ModifiedEditText:1.0'
 	}
