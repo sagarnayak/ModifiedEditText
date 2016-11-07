@@ -8,7 +8,6 @@ this is a more modified version of edittext. in convensional EditText in android
 4. SQL Injaction Character Validation
 5. Take Letters Only
 6. Take Numbers Only
-
 Specific Validation--
 1. Phone Number Validation
 2. Email Validation
