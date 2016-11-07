@@ -19,16 +19,13 @@ This is a more modified version of edittext. in conventional EditText in android
 ## How To Use
 ### Add it in your root build.gradle at the end of repositories:
 
-<body>
-    <tab> #include &lt; stdio.h &gt; <br>
-    <tab> <br>
-    <tab> int main (void) <br>
-    <tab> { <br>
-    <tab> <tab> printf ("Hello, World!"); <br>
-    <tab> <tab> return 0; <br>
-    <tab> } <br>
-</body>
-</html>
+ <tab> appprojects { <br />
+ <tab> repositories {<br />
+ <tab> <tab> maven {<br />
+ <tab> <tab>  <tab> url "https://jitpack.io" <br />
+ <tab> <tab>  <tab> } <br />
+ <tab>  } <br />
+ <tab> }
 
 ### Add the dependency
 
