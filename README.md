@@ -99,4 +99,6 @@ If you are aiming for a specific name validation then use this validation. this 
 ### How To Use Name Validation
     edittextmod:ValidationType="NAME"
     
+    
+    
 > At any point if the focus is changed and the validation is not successfull the edittext will not loose the focus. it will regain focus and request the user to enter a proper data with proper error message.
