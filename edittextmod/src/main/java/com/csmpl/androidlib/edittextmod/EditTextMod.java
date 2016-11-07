@@ -101,6 +101,11 @@ public class EditTextMod extends EditText {
      */
     String strDigits = "";
 
+    /*
+    string for error message
+     */
+    String strErrorMessage = "";
+
     public EditTextMod(Context context) {
         super(context);
         Displaylog.Log("default constructor.");
@@ -126,6 +131,7 @@ public class EditTextMod extends EditText {
         intValidationType = ta.getInteger(R.styleable.EditTextMod_ValidationType, -1);
         strFailBroadcast = ta.getString(R.styleable.EditTextMod_FailBroadcast);
         strSuccessBroadcast = ta.getString(R.styleable.EditTextMod_SuccessBroadcast);
+        strErrorMessage = ta.getString(R.styleable.EditTextMod_error_message);
 
         //display a log
         Displaylog.Log("the datas that are assigned as attrs are : \n" +
@@ -135,7 +141,8 @@ public class EditTextMod extends EditText {
                 "block sql injection : " + boolBlockSqlInjection + "\n" +
                 "take numbers only : " + boolTakeNumbersOnly + "\n" +
                 "take letters only : " + boolTakeLettersOnly + "\n" +
-                "validation type : " + intValidationType + "\n"
+                "validation type : " + intValidationType + "\n" +
+                "error message : " + strErrorMessage
         );
 
         /*
@@ -327,21 +334,33 @@ public class EditTextMod extends EditText {
                 if (isPhoneNumberAlright()) {
                     return false;
                 } else {
-                    setError("Please enter a valid Phone Number");
+                    if (strErrorMessage == "") {
+                        setError("Please enter a valid Phone Number");
+                    } else {
+                        setError(strErrorMessage);
+                    }
                     return true;
                 }
             case ConstsAndKw.EMAILADDRESS:
                 if (isEmailAlright()) {
                     return false;
                 } else {
-                    setError("Please enter a valid Email Address");
+                    if (strErrorMessage == "") {
+                        setError("Please enter a valid Email Address");
+                    } else {
+                        setError(strErrorMessage);
+                    }
                     return true;
                 }
             case ConstsAndKw.NAME:
                 if (isNameAlright()) {
                     return false;
                 } else {
-                    setError("Please enter a valid Name");
+                    if (strErrorMessage == "") {
+                        setError("Please enter a valid Name");
+                    } else {
+                        setError(strErrorMessage);
+                    }
                     return true;
                 }
             default:
