@@ -10,6 +10,7 @@ This is a more modified version of edittext. in conventional EditText in android
 4. SQL Injaction Character Validation
 5. Take Letters Only
 6. Take Numbers Only
+7. Receive Validation Failed and Success Broadcast
 
 ## Specific Validation
 1. Phone Number Validation
@@ -33,6 +34,14 @@ This is a more modified version of edittext. in conventional EditText in android
 	        compile 'com.github.sagarnayak:ModifiedEditText:1.0'
 	}
 
+### To Use In Layout
+    <com.csmpl.androidlib.edittextmod.EditTextMod xmlns:edittextmod="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/edittextmod_demo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        edittextmod:FailBroadcast="FAILED"
+        edittextmod:ValidationType="PHONENUMBER" />
+        
 ## 1. Number of Characters limit Validation
 Number of Characters limit Validation can be applied when yoou want to limit the number of characters that you want the user to enter. if you want only 10 characters to be entered then just meke a limit of 10.
 ### How To Use
