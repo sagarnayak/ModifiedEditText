@@ -44,4 +44,36 @@ This is a more modified version of edittext. in conventional EditText in android
         
 ## 1. Number of Characters limit Validation
 Number of Characters limit Validation can be applied when yoou want to limit the number of characters that you want the user to enter. if you want only 10 characters to be entered then just meke a limit of 10.
-### How To Use
+### How To Use Number of Characters limit Validation
+    edittextmod:LimitInput="4"
+    
+## 2. First BlankSpace Validation
+Setting this value as true will not allow a blank space to be entered at first place.
+### How To Use First BlankSpace Validation
+    edittextmod:BlockFirstSpace="true"
+    
+## 3. Intermediate BlankSpace Validation
+Setting this value as true will not allow a blank space to be entered at any position.
+### How To Use Intermediate BlankSpace Validation
+    edittextmod:BlockIntermediateSpace="true"
+    
+## 4. SQL Injaction Character Validation
+Setting this value as true will not allow a sql injection characters ( < , > , = , ~ , # , ^ , | , $ , % , " , & , * , ! , ' ) to be entered at any position.
+### How To Use SQL Injaction Character Validation
+    edittextmod:BlockSqlInjection="true"
+    
+## 5. Take Letters Only
+Setting this value as true will not allow characters other then letters at any position.
+### How To Use Take Letters Only Validation
+    edittextmod:TakeOnlyLetters="true"
+    
+## 6. Take Numbers Only
+Setting this value as true will not allow characters other then numbers at any position.
+### How To Use Take Numbers Only Validation
+    edittextmod:TakeOnlyNumbers="true"
+    
+## 7. Receive Validation Failed and Success Broadcast
+This parameter will require you to provide a string. this string will be broadcasted whenever there is a success or a fail in validtion as per what you have used this for.
+### How To Use Receive Validation Failed and Success Broadcast
+    edittextmod:FailBroadcast="FAILED_BORADCAST"
+    edittextmod:SuccessBroadcast="SUCCESS_BROADCAST"
