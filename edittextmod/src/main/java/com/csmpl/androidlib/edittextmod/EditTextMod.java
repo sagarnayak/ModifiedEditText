@@ -186,17 +186,20 @@ public class EditTextMod extends EditText {
             boolBlockFirstSpace = true;
             boolBlockIntermediateSpace = true;
             //sql injection validation
+            boolBlockSqlInjection = true;
         }
 
         //for email address validation
         if (intValidationType == ConstsAndKw.EMAILADDRESS) {
             boolBlockFirstSpace = true;
             boolBlockIntermediateSpace = true;
+            boolBlockSqlInjection = true;
         }
 
         //for name validation
         if (intValidationType == ConstsAndKw.NAME) {
             boolBlockFirstSpace = true;
+            boolBlockSqlInjection = true;
         }
 
         //do number validation
