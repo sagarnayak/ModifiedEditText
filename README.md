@@ -32,7 +32,7 @@ This is a more modified version of edittext. in conventional EditText in android
 ### Add the dependency
 
     dependencies {
-	       compile 'com.github.sagarnayak:ModifiedEditText:1.1'
+	       compile 'com.github.sagarnayak:ModifiedEditText:1.2'
 	}
 
 ### To Use In Layout
